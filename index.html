@@ -7,6 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+  <style>
+    body {
+      zoom: 80%;
+      -moz-transform: scale(0.8);
+      -moz-transform-origin: 0 0;
+    }
+
+    .overlay {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100vw !important;
+      height: 100vh !important;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 5;
+      transform: scale(1.25); /* Compensate for the 80% zoom */
+      transform-origin: 0 0;
+    }
+  </style>
+
   <title>Ahmed Hanzala</title>
 
 
@@ -48,7 +68,7 @@
         <div class="info-content">
           <h1 class="name" title="Ahmed Hanzala">Ahmed Hanzala</h1>
 
-          <p class="title">AI Engineer</p>
+          <p class="title">ML Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +94,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:ahanzala.bscs20seecs@seecs.edu.pk" class="contact-link">ahanzala.bscs20seecs@seecs.edu.pk</a>
+              <a href="mailto:ahanzala.cs@gmail.com" class="contact-link">ahanzala.cs@gmail.com</a>
             </div>
 
           </li>
@@ -208,15 +228,35 @@
 
         <section class="about-text">
           <p>
-          I like to play around with generative models for audio and LLMs. I like collaborating with people and startups 
-          to build human-friendly AI solutions.
+            Interested in using Machine Learning to advance video usecases.
           </p>
 
           <p>
-            <i>"My goal is to use AI to create impactful solutions for education, enviorment, and creativity driving positive change where it's needed most. Committed to
-              research and innovation, I seek to drive advancements that contribute to a brighter and more equitable future"</i> 
-            
+            If you're too lazy to read here's what I'm up to:
           </p>
+
+          <p>
+            Currently working as a Machine Learning Engineer at Sieve, a video AI company. Mostly working on building AI solutions curated for video and audio.
+          </p>
+
+          <h4>This past year:</h4> <br>
+          <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>
+              • Dubbing - Developed a State-of-the-Art Video Dubbing Solution, leading the market, used by top creative companies like VEED, bambuser and hundreds of thousands of developers and creators, generating over <b>$1M revenue</b> in just three months of launch.
+            </li> <br>
+            <li>
+              • Content Moderation - Automating content moderation tasks in creative platform, currently being used to moderate <b>200M+</b> users, notably used by the video streaming platform Kick.com
+            </li> <br>
+            <li>
+              • Part of Sieve's research and development team, responsible for building sieve/transcribe, sieve/text-to-speech, sieve-dubbing, sieve/text-moderation, sieve/video-moderation and <a href="https://www.sievedata.com/explore" style="color: var(--orange-yellow-crayola)">many more...</a> <br>
+             
+            </li>
+          </ul>
+
+          <!-- <p>
+            <a href="https://www.sievedata.com/explore" style="color: var(--orange-yellow-crayola)">Check out</a><br>
+            <a href="#portfolio" style="color: var(--orange-yellow-crayola)">Checkout Apps I've built</a>
+          </p> -->
         </section>
 
 
@@ -238,7 +278,7 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Engineer</h4>
+                <h4 class="h4 service-item-title">ML Engineer</h4>
 
                 <p class="service-item-text">
                   Working with LLMs, GANs and Diffusion models especially for audio modality.
@@ -301,10 +341,10 @@
         </section>
 
 
-        <!--
+        
                  <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Research</h3>
+          <h3 class="h3 testimonials-title">Publications</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -318,8 +358,9 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Generative Urdu Speech Synthesis</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
+                
                   <p>
-                    <a style="color: #e0b960;" href="https://ahmedhanzala.github.io/urdu-tts/">Paper Link</a>
+                    <a style="color: #e0b960;" href="https://ieeexplore.ieee.org/document/10795832">IEEE Conference Paper</a>
 
                     Abstract—In recent years, Natural Language Processing
                     (NLP) and speech synthesis have witnessed significant progress,
@@ -342,7 +383,26 @@
 
               </div>
             </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
+                <figure class="testimonials-avatar-box" >
+                  <img src="./assets/images/icons8-case-study-48.png" alt="Daniel lewis"  data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>ARAIS-Activity Recognition of Autism In Children During Intervention Sessions</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                
+                  <p>
+                    <a style="color: #e0b960;" href="https://ieeexplore.ieee.org/document/10800500">IEEE Conference Paper</a>
+
+                    Abstract—Autism Spectrum Disorder (ASD) is a neurodevelopment disorder, which may bring various social and behavioral challenges in a child's life. ASD affects children's overall growth and development by limiting their social and cognitive skills. Play therapy (PT) for ASD is the most common type of intervention that is given by trained therapists to improve the social, communicational, and behavioral skills in children and is mostly analyzed manually. To achieve the positive results of the intervention, it is necessary to monitor and analyze all the activities performed by the children during therapy sessions. In this paper, we have proposed two frameworks for activity recognition of autistic children during intervention sessions, based on a Long Short-Term Memory (LSTM) network i.e. 2D-ARAISLSTM and 3D-ARAIS-LSTM. In these frameworks, 2D and 3D skeleton movements have been used as input modalities for recognizing the complex tasks/activities performed during intervention sessions. The recognition accuracy of the proposed 2D-ARAIS-LSTM model is 95.72% for the 2D skeleton data. Whereas the accuracy of the proposed 3D-ARAIS-LSTM model is 85.00% for the 3D skeleton, on the multimodal-autism intervention dataset (MMASD).
+                  </p>
+                </div>
+
+              </div>
+            </li>
 
         </section>
 
@@ -354,7 +414,7 @@
 
    <!-- Featured Video -->
   <section>
-    <h2 class="h2">Featured</h2>
+    <h2 class="h2">Featured</h2> 
     <iframe class="featured-video" width="600" height="315" src="https://youtube.com/embed/_2ivUJi5gsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
 
     <iframe class="featured-video" width="600" height="315" src="https://www.youtube.com/embed/OQu_kebuYdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
@@ -413,7 +473,11 @@
 
           <ul class="clients-list has-scrollbar">
 
-            
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://www.sievedata.com/sieve-square.png" width="150px" height="150px" alt="Sieve Data logo">
+              </a>
+            </li>
 
             <li class="clients-item">
               <a href="#">
@@ -473,7 +537,7 @@
 
         <section class="timeline">
 
-          <a href="https://drive.google.com/uc?export=download&id=1KO6YD4RJY-grEfjZgQaEV5hD58n4cebh" class="download-button">
+          <a href="https://drive.google.com/uc?export=download&id=1TaXKnWlILEYVn7MRNK3uq0qlFlTHKRFl" class="download-button">
             <i class="fas fa-download"></i>
             Download Resume
           </a>
@@ -492,7 +556,6 @@
 
               <h4 class="h4 timeline-item-title">National University of Science and Technology (NUST)</h4>
 
-              <span>2020 — 2024</span>
 
               <p class="timeline-text">
                 I completed my Bacholer's in Computer Science from NUST where I learned about principles of computing
@@ -520,9 +583,24 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Machine Learning Engineer - Sieve</h4>
+
+              <span>2023 (San Francisco, USA) - Present</span>
+
+              <p class="timeline-text">
+                <ul>
+                <li class="timeline-text">Developing and maintaining machine learning models and pipelines for video and audio processing.</li>
+               
+              </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">AI Engineer - Dream Lab AI</h4>
 
-              <span>2023 — Present (Virginia, USA)</span>
+              <span>2023 (Virginia, USA)</span>
 
               <p class="timeline-text">
                 <ul>
@@ -962,186 +1040,229 @@
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Articles</h2>
         </header>
 
-        <h3 class="project-title"><i>Comming soon....</i></h3>
-
-        <!-- <section class="blog-posts">
+        <!-- Articles by me -->
+        <section class="blog-posts">
+          <h3 class="h3">Articles Written by Me</h3>
 
           <ul class="blog-posts-list">
-
+            <!-- Human-in-the-loop Dubbing Article -->
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="https://www.sievedata.com/blog/enabling-human-in-the-loop-video-audio-dubbing">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="https://storage.googleapis.com/sieve-public-data/dubbing-editing-blog/cover-dubbing-editing.webp" alt="Human-in-the-loop Dubbing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">AI</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-11-26">Nov 26, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Enabling human-in-the-loop video and audio dubbing systems on Sieve</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    New features enabling human-in-the-loop experiences in Sieve's dubbing pipeline, including custom transcripts and selective dubbing capabilities.
                   </p>
-
                 </div>
+              </a>
+            </li>
 
+            <!-- Background Noise Removal Article -->
+            <li class="blog-post-item">
+              <a href="https://www.sievedata.com/blog/ai-audio-video-background-noise-removal-apis">
+                <figure class="blog-banner-box">
+                  <img src="https://storage.googleapis.com/sieve-public-data/Microphone_Blowing_Trash.webp" alt="Background Noise Removal" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Audio Processing</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-06">Nov 6, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">A developer's guide to background noise removal in video and audio</h3>
+
+                  <p class="blog-text">
+                    Comprehensive guide on implementing background noise removal using traditional DSP, AI models, and source separation methods.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Dubbing 2.0 Article -->
+            <li class="blog-post-item">
+              <a href="https://www.sievedata.com/blog/high-quality-ai-dubbing-api-v2-for-developers">
+                <figure class="blog-banner-box">
+                  <img src="https://storage.googleapis.com/sieve-public-data/Mountain_landscape_with_phone_(6).png" alt="Dubbing 2.0" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-10-17">Oct 17, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Dubbing 2.0: The highest quality AI dubbing solution for developers</h3>
+
+                  <p class="blog-text">
+                    Latest updates to Sieve's dubbing pipeline offering improved speech quality, translation controls, and flexible pricing for developers.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Sieve Moderation Suite Article -->
+            <li class="blog-post-item">
+              <a href="https://www.sievedata.com/blog/introducing-the-sieve-moderation-suite">
+                <figure class="blog-banner-box">
+                  <img src="https://storage.googleapis.com/sieve-public-data/moderation-blog/a-vast-sea-with-a-magnifying-glass--a-glowing-shie.webp" alt="Sieve Moderation Suite" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-12-03">Dec 3, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Introducing the Sieve Moderation Suite</h3>
+
+                  <p class="blog-text">
+                    Announcing new content moderation pipelines for text and visual content, featuring industry-leading accuracy across 20+ text classes and 40+ visual classes.
+                  </p>
+                </div>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </section>
+
+        <!-- Articles about my work -->
+        <section class="blog-posts">
+          <h3 class="h3">Articles About My Work</h3>
+
+          <ul class="blog-posts-list">
+           
+
+            <!-- Bambuser AI Dubbing Article -->
+            <li class="blog-post-item">
+              <a href="https://bambuser.com/article/instantly-reach-global-audiences-with-ai-dubbing">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/media_14e7f8a17ac1ca81caef2d5145607930aa086c960.png" alt="Bambuser AI Dubbing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Product Launch</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-01">January 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Bambuser - Instantly Reach Global Audiences with AI Dubbing</h3>
+
+                  <p class="blog-text">
+                    Bambuser's integration of Sieve's AI dubbing technology to enable instant global reach for video content with voice cloning capabilities.
+                  </p>
+                </div>
               </a>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="https://www.veed.io/learn/veed-and-sieve-partnership">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="https://cdn.prod.website-files.com/616e938268c8f0a92cb2b540/66ddea706e5f7c7b14d2d1e0_Hero_VEED_Partnership%20Sieve-p-1080.png" alt="VEED Partnership" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Partnership</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-01">January 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">VEED Clips: Instant Repurposing for Social Media, Powered by Sieve</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    VEED's partnership with Sieve to power their new Clips feature, enabling automatic video repurposing for social media.
                   </p>
-
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="https://www.sievedata.com/blog/youtube-dubbing-impact-on-global-content">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="https://storage.googleapis.com/sieve-public-data/youtube-dubbing-impact-cover.webp" alt="YouTube Dubbing Impact" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">AI Technology</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-12">December 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">The Impact of YouTube Dubbing on Global Content</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Analysis of YouTube's auto-dubbing capabilities and how Sieve's advanced features address current limitations.
                   </p>
-
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="https://www.sievedata.com/blog/ai-dubbing-safety-concerns">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="https://storage.googleapis.com/sieve-public-data/a-futuristic-microphone-in-a-moody-neon-environmen.webp" alt="AI Dubbing Safety" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">AI Safety</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-12">December 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Safety Concerns of AI Dubbing and How Sieve Addresses Them</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    Comprehensive overview of AI dubbing safety concerns and Sieve's approach to addressing ethical challenges.
                   </p>
-
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <a href="https://www.veed.io/tools/voice-dubber/ai-dubbing">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="https://cdn-site-assets.veed.io/cdn-cgi/image/width=1536,quality=75,format=auto/Ai_Dubbing_3db7034522/Ai_Dubbing_3db7034522.png" alt="AI Voice Dubbing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Product Feature</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-01">January 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title">VEED AI Dubbing - Automatic Voice Translation Software</h3>
 
                   <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    VEED's implementation of Sieve's AI dubbing technology for automatic voice translation across multiple languages.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
-
-          <!-- </ul>
-
-        </section> -->
+          </ul>
+        </section>
 
       </article>
 
